@@ -7,6 +7,7 @@ body {
 
     font-family: 'Poiret One', cursive;
     font-size: 1rem;
+    line-height: 1.2;
     font-weight: 400;
     color: #fff;
 }
@@ -141,6 +142,20 @@ p {
     transition: background-color .2s linear;
 }
 
+.btn-card {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+
+    transition: color .2s linear, border .2s linear;
+}
+
+.btn-card:hover,
+.btn-card:focus {
+    color: #000;
+    border: 2px solid rgb(216, 173, 71);
+}
+
 .btn:hover,
 .btn:focus {
     background-color: rgb(240, 180, 40);
@@ -245,4 +260,144 @@ p {
     top: 0;
     width: 100%;
     height: auto;
+}
+
+/* PROJECT */
+
+.project {
+    background: url('../img/project/elitnyy-zagorodnyy-dom-dlya-bolshoy-semi-15\ \(1\).png') center no-repeat;
+    background-size: cover;
+}
+
+.project__bg {
+    background-image: radial-gradient(circle at center, rgba(2,9,22,0) 0%, rgba(1,7,16,0.31) 31%, #01050d 100%);
+    background-color: rgba(2, 9, 22, .92);
+}
+
+.project__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 165px 0 44px;
+}
+
+.project__header-item {
+    padding-top: 24px;
+    width: 39.62%;
+    max-width: 515px;
+}
+
+.project__header-title {
+    margin-bottom: 1.8rem;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #D8AD47;
+}
+
+.project__header-text {
+    margin-bottom: 40px;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.project__header-text p {
+    margin-bottom: 1rem;
+}
+
+.project__header-text p:last-child {
+    margin-bottom: 0;
+}
+
+.project__header-item__card {
+    width: 58.38%;
+}
+
+.project__card {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12.25%;
+}
+
+/* CARD */
+
+.card__item {
+    flex: 0 1 32%;
+}
+
+.card__photo {
+    position: relative;
+    padding-top: 56.25%;
+
+    border-radius: 40px;
+}
+
+.card__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+
+    border-radius: 45px;
+}
+
+.card__photo:hover .card__content {
+    background-color: rgba(0, 0, 0, .40);
+
+}
+
+.card__content {
+    width: 100%;
+    padding: 1.2em 2.3em 2.8em 2.3em;
+
+    background-color: rgba(0, 0, 0, .65);
+    border-radius: 45px;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+
+    transition: background-color .2s linear;
+}
+
+.card__title {
+    margin-bottom: 1rem;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 4.3rem;
+    color: #fff;
+    font-weight: 900;
+}
+
+.card__metr {
+    margin-bottom: 1.2rem;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 2.25rem;
+    color: #d8ad47;
+    font-weight: 800;
+}
+
+.card__icon {
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+}
+
+.card__text {
+    margin-left: 0.75rem;
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 1.06rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.card__button {
+    margin-top: 2.06rem;
 }
